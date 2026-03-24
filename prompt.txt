@@ -1,4 +1,4 @@
-Fix the bug in sources/fpa.sv.
+Fix the bug in sources/arb.sv.
 
 The arbiter is synchronous and updates on the rising edge of clk.
 
