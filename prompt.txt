@@ -1,0 +1,12 @@
+Fix the bug in sources/fpa.sv.
+
+The arbiter is synchronous and updates on the rising edge of clk.
+
+Requirements:
+- At most one bit of grant can be high at any time.
+- If no request is active, grant must be zero.
+- Grant must only be asserted for active request bits.
+
+The arbiter follows a fixed priority scheme among the request signals.
+
+Ensure the implementation correctly handles all combinations of req.
