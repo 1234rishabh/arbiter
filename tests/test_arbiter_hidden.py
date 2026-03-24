@@ -56,5 +56,5 @@ def test_fixed_priority_arbiter_runner() -> None:
 
     runner.test(
         hdl_toplevel="fixed_priority_arbiter",
-        test_module="test_arbiter",
+        test_module="test_arbiter_hidden",
     )
